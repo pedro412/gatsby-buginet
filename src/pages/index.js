@@ -5,7 +5,7 @@ import SEO from '../components/seo'
 import { FaChalkboardTeacher } from 'react-icons/fa'
 
 export const query = graphql`
-  query GET_DESCRIPTION {
+  query  {
     allSite {
       edges {
         node {
@@ -19,6 +19,8 @@ export const query = graphql`
 `
 
 const IndexPage = ({ data }) => {
+  console.log(data)
+
   const title = data.allSite.edges[0].node.siteMetadata.description
 
   return (
@@ -35,3 +37,20 @@ const IndexPage = ({ data }) => {
 }
 
 export default IndexPage
+
+export const queryArticulos = graphql`
+query  {
+  allMarkdownRemark(limit: 100) {
+   edges {
+    node {
+      id
+      frontmatter {
+        title
+        path
+        date
+      }
+    }
+  }
+}
+}
+`

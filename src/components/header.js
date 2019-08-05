@@ -6,9 +6,9 @@ import { FaBug, FaTwitter } from 'react-icons/fa'
 const Header = ({ siteTitle }) => {
   return (
     <nav className='navbar'>
-      <a href='/'>
+      <Link to='/'>
         <div className='nav-logo'> <FaBug /> </div>
-      </a>
+      </Link>
       <ul className='nav-menu'>
         <li className='nav-menu-li'>
           <Link className='nav-menu-item' to='/articulos/'>Artículos</Link>
@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => {
       </ul>
       <div className='nav-social'>
         <a className='nav-menu-item' target='_blank' href='https://twitter.com/Pedro_412'>
-          <FaTwitter />
+          <FaTwitter size='26px' />
         </a>
       </div>
     </nav>

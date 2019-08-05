@@ -29,9 +29,12 @@ const Layout = ({ children }) => {
       <div>
         <main className='main-container container'>{children}</main>
         <footer>
+          <div className='text-center bold'>
           © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href='https://www.gatsbyjs.org'>Gatsby</a>
+            {` `}
+            <a href='https://www.gatsbyjs.org'>Gatsby</a> <br />
+          by Pedro Alvarez
+          </div>
         </footer>
       </div>
     </>

@@ -56,6 +56,11 @@ footer {
 	padding-bottom: 50px;
 }
 
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
 .navbar {
 	background-color: #2a2e35;
 	height: 70px;
@@ -97,6 +102,7 @@ footer {
 .nav-menu-li {
 	display: inline;
 	padding: 0 5px;
+	padding-right: 10px;
 }
 .nav-menu-item {
 	color: #b2becd;
